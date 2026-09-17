@@ -991,12 +991,14 @@ footer {
 ========================= */
 
 .subcategory-container {
+    width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     overflow-x: auto;
-    padding: 4px 0 14px;
+    padding: 2px 2px 12px;
     margin-bottom: 22px;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 .subcategory-container::-webkit-scrollbar {
@@ -1005,17 +1007,27 @@ footer {
 
 .subcategory-button {
     flex: 0 0 auto;
-    border: 1px solid #c8d2c5;
+    min-height: 40px;
+    padding: 9px 15px;
+    border: 1px solid rgba(32, 88, 61, 0.28);
+    border-radius: 999px;
     background: transparent;
     color: var(--verde);
-    padding: 10px 16px;
-    border-radius: 999px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 14px;
+    font-family: inherit;
+    font-size: 12px;
     font-weight: 600;
     white-space: nowrap;
     cursor: pointer;
-    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.subcategory-button:active {
+    transform: scale(0.96);
 }
 
 .subcategory-button:hover {
@@ -1024,8 +1036,8 @@ footer {
 
 .subcategory-button.active {
     background: var(--verde);
-    color: white;
     border-color: var(--verde);
+    color: var(--crema);
 }
 
 
@@ -1034,6 +1046,7 @@ footer {
 ========================= */
 
 .product-variants {
+    width: 100%;
     margin-top: 8px;
     display: flex;
     flex-direction: column;
@@ -1041,18 +1054,23 @@ footer {
 }
 
 .variant {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
     color: var(--texto-suave);
-    font-size: 0.95rem;
+    font-size: 12px;
+    line-height: 1.35;
 }
 
 .variant .price {
+    flex-shrink: 0;
     color: var(--verde);
+    font-size: 13px;
     font-weight: 700;
     white-space: nowrap;
+    padding-top: 0;
 }
 
 
@@ -1061,7 +1079,7 @@ footer {
 ========================= */
 
 .subcategory-title {
-    border-bottom: 1px solid #ddd6c8;
+    border-bottom: 1px solid rgba(32, 88, 61, 0.14);
 }
 
 .subcategory-title .product-information h3 {
