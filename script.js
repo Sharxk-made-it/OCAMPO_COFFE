@@ -1,12 +1,8 @@
-/* ==========================================
-   PRODUCTOS
-========================================== */
+
 
 const productos = [
 
-    /* ==========================
-       CLÁSICOS
-    ========================== */
+
 
     {
         nombre: "Espresso",
@@ -64,9 +60,7 @@ const productos = [
     },
 
 
-    /* ==========================
-       ESPECIALES
-    ========================== */
+
 
     {
         nombre: "Chocolate",
@@ -109,9 +103,7 @@ const productos = [
     },
 
 
-    /* ==========================
-       MÉTODOS
-    ========================== */
+
 
     {
         nombre: "V60",
@@ -156,9 +148,7 @@ const productos = [
     },
 
 
-    /* ==========================
-       BEBIDAS
-    ========================== */
+
 
     {
         nombre: "Té",
@@ -185,9 +175,7 @@ const productos = [
     },
 
 
-    /* ==========================
-       EXTRAS
-    ========================== */
+
 
     {
         nombre: "Carga de espresso",
@@ -217,9 +205,6 @@ const productos = [
 
 
 
-/* ==========================================
-   NOMBRES DE LAS CATEGORÍAS
-========================================== */
 
 const nombresCategorias = {
 
@@ -237,9 +222,6 @@ const nombresCategorias = {
 
 
 
-/* ==========================================
-   ELEMENTOS HTML
-========================================== */
 
 const productsContainer =
     document.getElementById("productsContainer");
@@ -252,9 +234,7 @@ const categoryButtons =
 
 
 
-/* ==========================================
-   MOSTRAR PRODUCTOS
-========================================== */
+
 
 function mostrarProductos(categoria) {
 
@@ -315,9 +295,6 @@ function mostrarProductos(categoria) {
 
 
 
-/* ==========================================
-   CAMBIAR CATEGORÍA
-========================================== */
 
 categoryButtons.forEach(button => {
 
@@ -356,9 +333,7 @@ categoryButtons.forEach(button => {
 
 
 
-/* ==========================================
-   PANTALLA DE BIENVENIDA
-========================================== */
+
 
 const welcome =
     document.getElementById("welcome");
@@ -387,8 +362,6 @@ openMenu.addEventListener("click", () => {
 
 
 
-/* ==========================================
-   MENÚ INICIAL
-========================================== */
+
 
 mostrarProductos("clasicos");
