@@ -27,9 +27,7 @@
 <body>
 
 
-
-
-
+    <!-- PANTALLA DE BIENVENIDA -->
 
     <section id="welcome" class="welcome">
 
@@ -50,13 +48,12 @@
     </section>
 
 
-
-
+    <!-- CONTENIDO PRINCIPAL -->
 
     <main id="mainContent" class="hidden">
 
 
-
+        <!-- HEADER -->
 
         <header class="top-header">
 
@@ -65,8 +62,7 @@
         </header>
 
 
-
-
+        <!-- HERO -->
 
         <section class="hero">
 
@@ -75,6 +71,7 @@
                 <img src="assets/rana.png" alt="Rana de Ocampo Café" class="frog">
 
             </div>
+
 
             <div class="hero-text">
 
@@ -96,38 +93,25 @@
         </section>
 
 
-
-
+        <!-- CATEGORÍAS GENERALES -->
 
         <nav class="category-nav">
 
-            <button class="category-button active" data-category="clasicos">
-                Clásicos
-            </button>
-
-            <button class="category-button" data-category="especiales">
-                Especiales
-            </button>
-
-            <button class="category-button" data-category="metodos">
-                Métodos
-            </button>
-
-            <button class="category-button" data-category="bebidas">
+            <button class="category-button active" data-category="bebidas">
                 Bebidas
             </button>
 
-            <button class="category-button" data-category="extras">
-                Extras
+            <button class="category-button" data-category="alimentos">
+                Alimentos
             </button>
 
         </nav>
 
 
-
-
+        <!-- MENÚ -->
 
         <section class="menu-section">
+
 
             <div class="menu-heading">
 
@@ -136,13 +120,21 @@
                 </span>
 
                 <h2 id="categoryTitle">
-                    Clásicos
+                    Bebidas
                 </h2>
 
                 <div class="wave"></div>
 
             </div>
 
+
+            <!-- SUBCATEGORÍAS -->
+
+            <div id="subcategoryContainer" class="subcategory-container">
+            </div>
+
+
+            <!-- PRODUCTOS -->
 
             <div id="productsContainer" class="products-container">
             </div>
@@ -151,8 +143,7 @@
         </section>
 
 
-
-
+        <!-- NOTAS DEL MENÚ -->
 
         <section class="menu-note">
 
@@ -169,8 +160,7 @@
         </section>
 
 
-
-
+        <!-- MENSAJE DE LA RANA -->
 
         <section class="frog-message">
 
@@ -191,8 +181,7 @@
         </section>
 
 
-
-
+        <!-- INFORMACIÓN -->
 
         <section class="information">
 
@@ -205,7 +194,9 @@
             </p>
 
             <p>
-                🕐 Lunes a domingo · 9:00 AM - 1:00 PM // 6:00 PM - 10:30 PM
+                🕐 Lunes a domingo · 9:00 AM - 1:00 PM
+                <br>
+                6:00 PM - 10:30 PM
             </p>
 
 
@@ -216,8 +207,7 @@
         </section>
 
 
-
-
+        <!-- FOOTER -->
 
         <footer>
 
@@ -231,9 +221,6 @@
 
 
     </main>
-
-
-
 
 
     <script src="script.js"></script>
