@@ -986,6 +986,87 @@ footer {
 
 }
 
+/* =========================
+   SUBCATEGORÍAS
+========================= */
+
+.subcategory-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 0 14px;
+    margin-bottom: 22px;
+    scrollbar-width: none;
+}
+
+.subcategory-container::-webkit-scrollbar {
+    display: none;
+}
+
+.subcategory-button {
+    flex: 0 0 auto;
+    border: 1px solid #c8d2c5;
+    background: transparent;
+    color: var(--verde);
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.subcategory-button:hover {
+    border-color: var(--verde);
+}
+
+.subcategory-button.active {
+    background: var(--verde);
+    color: white;
+    border-color: var(--verde);
+}
+
+
+/* =========================
+   VARIANTES DE PRODUCTOS
+========================= */
+
+.product-variants {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.variant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+}
+
+.variant .price {
+    color: var(--verde);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TÍTULOS DENTRO DEL MENÚ
+========================= */
+
+.subcategory-title {
+    border-bottom: 1px solid #ddd6c8;
+}
+
+.subcategory-title .product-information h3 {
+    color: var(--verde);
+}
 
 
 
