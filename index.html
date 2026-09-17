@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Menú digital de Ocampo Café">
+
+    <title>Ocampo Café | Menú</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         PANTALLA DE BIENVENIDA
+    ================================== -->
+
+    <section id="welcome" class="welcome">
+
+        <div class="welcome-content">
+
+            <img src="assets/logo.png" alt="Ocampo Café" class="welcome-logo">
+
+            <p class="welcome-subtitle">
+                Café para disfrutar despacio.
+            </p>
+
+            <button id="openMenu" class="main-button">
+                Ver menú
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         CONTENIDO PRINCIPAL
+    ================================== -->
+
+    <main id="mainContent" class="hidden">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <img src="assets/logo.png" alt="Ocampo Café" class="header-logo">
+
+        </header>
+
+
+
+        <!-- =================================
+             HERO
+        ================================== -->
+
+        <section class="hero">
+
+            <div class="hero-image-container">
+
+                <img src="assets/rana.png" alt="Rana de Ocampo Café" class="frog">
+
+            </div>
+
+            <div class="hero-text">
+
+                <span>
+                    BIENVENIDO
+                </span>
+
+                <h1>
+                    Ocampo Café
+                </h1>
+
+                <p>
+                    Café, bebidas y algo rico
+                    para acompañar el momento.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             NAVEGACIÓN DE CATEGORÍAS
+        ================================== -->
+
+        <nav class="category-nav">
+
+            <button class="category-button active" data-category="clasicos">
+                Clásicos
+            </button>
+
+            <button class="category-button" data-category="especiales">
+                Especiales
+            </button>
+
+            <button class="category-button" data-category="metodos">
+                Métodos
+            </button>
+
+            <button class="category-button" data-category="bebidas">
+                Bebidas
+            </button>
+
+            <button class="category-button" data-category="extras">
+                Extras
+            </button>
+
+        </nav>
+
+
+
+        <!-- =================================
+             MENÚ
+        ================================== -->
+
+        <section class="menu-section">
+
+            <div class="menu-heading">
+
+                <span>
+                    OCAMPO CAFÉ
+                </span>
+
+                <h2 id="categoryTitle">
+                    Clásicos
+                </h2>
+
+                <div class="wave"></div>
+
+            </div>
+
+
+            <div id="productsContainer" class="products-container">
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             NOTA
+        ================================== -->
+
+        <section class="menu-note">
+
+            <p>
+                <strong>*</strong>
+                Opcional frío
+            </p>
+
+            <p>
+                + Todas nuestras bebidas con base de café
+                pueden ser descafeinadas.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             RANA FINAL
+        ================================== -->
+
+        <section class="frog-message">
+
+            <img src="assets/rana.png" alt="Rana Ocampo Café">
+
+            <div>
+
+                <p>
+                    ¿Ya sabes qué vas a pedir?
+                </p>
+
+                <span>
+                    Nosotros ponemos el café ☕
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             INFORMACIÓN
+        ================================== -->
+
+        <section class="information">
+
+            <h2>
+                Visítanos
+            </h2>
+
+            <p>
+                📍 Centro de Tamazula de Gordiano, Jalisco
+            </p>
+
+            <p>
+                🕐 Lunes a domingo · 9:00 AM - 1:00 PM // 6:00 PM - 10:30 PM
+            </p>
+
+
+            <a href="https://wa.me/523411234567" target="_blank" class="whatsapp-button">
+                WhatsApp
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================
+             FOOTER
+        ================================== -->
+
+        <footer>
+
+            <img src="assets/logo.png" alt="Ocampo Café" class="footer-logo">
+
+            <p>
+                © 2026 Ocampo Café
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
